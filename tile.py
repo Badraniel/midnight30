@@ -31,7 +31,7 @@ class Tile(Widget):
     def spawn(self):
         # Create animations for the alpha properties
         # Animate both background and border alpha to 1 over 2 seconds
-        anim_bg = Animation(bg_alpha=1, border_alpha=1, duration=2)
+        anim_bg = Animation(bg_alpha=1, border_alpha=1, duration=.5)
         # Start both animations
         anim_bg.start(self)
 

@@ -1,22 +1,30 @@
 #:kivy 1.11.1
 
-<Tile>:
-    # Estas propriedades serão usadas para animação
-    bg_alpha: 0.1  # Alpha inicial do fundo
-    border_alpha: 0.1  # Alpha inicial da borda
-
+<Screen>:
+    # 1. Background Visual
     canvas.before:
-        # Retângulo de fundo
         Color:
-            rgba: root.bg_color[0], root.bg_color[1], root.bg_color[2], root.bg_alpha
+            rgba: 0.1, 0.1, 0.1, .1
         Rectangle:
-            pos: root.pos
-            size: root.size
+            size: self.size
+            pos: self.pos
 
-        # Linha da borda
-        Color:
-            rgba: root.border_color[0], root.border_color[1], root.border_color[2], root.border_alpha
-        Line:
-            rectangle: self.x, self.y, self.width, self.height
-            width: 1
+    TileGrid:
+        id: tile_grid_widget
+        rows: 10
+        cols: 10
+        size_hint: None, None
+        size: 300, 300  # Exemplo: 10 tiles * 30dp cada
+        pos_hint: {'right': 0.95, 'top': 0.95} # Posiciona no canto superior direito
+        # Adiciona 100 Tiles ao grid
+        # Loop para criar os tiles
+        # O Kivy não suporta loops diretos no KV para criar widgets dinamicamente assim.
+        # Precisaremos fazer isso via Python ou usar um Factory para gerar os tiles.
+        # Por enquanto, vamos deixar o TileGrid vazio e adicionar os tiles via Python.
+
+<TileGrid>:
+    # Configurações básicas para o GridLayout
+    padding: 1  # Espaçamento interno
+    spacing: 1  # Espaçamento entre os tiles
+    # O conteúdo dos tiles será adicionado via Python
 
