@@ -1,22 +1,22 @@
 #:kivy 1.11.1
 
 <Tile>:
-    # These properties will be used for animation
-    bg_alpha: 0.1  # Initial background alpha
-    border_alpha: 0.1  # Initial border
+    # Estas propriedades serão usadas para animação
+    bg_alpha: 0.1  # Alpha inicial do fundo
+    border_alpha: 0.1  # Alpha inicial da borda
 
     canvas.before:
-        # Background rectangle
+        # Retângulo de fundo
         Color:
-            rgba: root.bg_color[:3] + [root.bg_alpha]  # Use get_color method
+            rgba: root.bg_color[0], root.bg_color[1], root.bg_color[2], root.bg_alpha
         Rectangle:
             pos: root.pos
             size: root.size
 
-        # Border line
+        # Linha da borda
         Color:
-            rgba: root.border_color[:3] + [root.border_alpha]  # Use get_color method
+            rgba: root.border_color[0], root.border_color[1], root.border_color[2], root.border_alpha
         Line:
-            points: [root.x, root.y, root.right, root.y, root.right, root.top, root.x, root.top, self.x, self.y]
-            close: False
+            rectangle: self.x, self.y, self.width, self.height
             width: 1
+
