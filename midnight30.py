@@ -4,7 +4,7 @@ from thumb_input import ThumbInput
 from root_button import RootButton
 from colors import colors
 from kivy.core.window import Window
-from tileworks import Tile
+from tile import Tile
 
 Window.size = (360, 640)
 

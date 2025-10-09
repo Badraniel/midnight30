@@ -18,7 +18,7 @@ class Tile(Widget):
     bg_alpha = NumericProperty(0.1)  # Initial alpha for background
     border_alpha = NumericProperty(0.1)  # Initial alpha for border
     bg_color = StringProperty('branco')
-    border_color = StringProperty('cinza-medio')
+    border_color = StringProperty('cinza_medio')
     def __init__(self, **kwargs):
         super(Tile, self).__init__(**kwargs)
         self.size_hint = (None, None)
