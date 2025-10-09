@@ -1,0 +1,21 @@
+<RootButton>:
+    size_hint: None, None
+    size: 60, 60
+
+    canvas.before:
+        Color:
+            rgba: root.color
+        Ellipse:
+            pos: self.pos
+            size: self.size
+        Color:
+            rgba: root.edge_color
+        Line:
+            ellipse: [self.x, self.y, self.width, self.height]
+            width: 2
+
+    Label:
+        text: root.text
+        color: root.text_color
+        font_size: 20
+        bold: True
