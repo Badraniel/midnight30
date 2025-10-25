@@ -1,0 +1,58 @@
+-pixel art style
+-Grid-based location (from tibia)
+-targetting system (from tibia)
+-'container' system  (from tibia)
+-Round/turn-based interactions/free movement interactions
+
+-monster-specific spells and spawns system
+-MvE (monster vs environment), MvM (monster vs monster), EvE (environment vs environment) all occur using the same 'spell system'
+-MvE, MvM and EvE all can drop 'arguments' just from being witnessed under specific conditions.
+
+-area of knowledge system (you can freely craft spells using arguments from specific areas of knowledge)
+-area of knowledge transfer system (you can transfer an argument from one aok to another, if compatible)
+-different 'learning paths' which are actions that can 'drop' spell arguments for specific areas of knowledge
+-The more you perform spells from an AOK, the more wise you are in it, the more likely you are to drop 'arguments' from the environment
+
+-looting system
+    -upon becoming 'wise enough' in specific AOK, you start having specific drop chances from monsters.
+
+-Crafting system
+    -upon pursuing crafting wisdom, you start dropping item-templates (which can later be forged) by witnessing the environment in specific ways
+    -the arguments from the 'crafting aok' are spent on specific items you craft, not retained as knowledge in the form of spells
+
+
+-Allied units system
+    -upon pursuing PcM (player cooperating with monsters), you can drop specific 'commander aok' arguments
+    - you also drop specific 'monster-aok' drops (as in, you drop arguments that are tied to the monster's body, not yours.
+    -these are used to create complex commands that allow you to go on adventures with your ally.
+
+-7 item-slots system.
+    -instead of having an item slot for each piece of clothing, you have 7 'power-item-slots' loosely associated with one of the 7 chakras.
+    The items you draw power from are not the same items you draw aesthetics from
+
+-8 aesthetic system
+    -you can buy, craft and drop specific items which are used in the avatar-aesthetic menu
+    -you can also develop specific visual modificiations/effects by advancing in certain AoK or building certain level-complexity spells
+
+-9 'vocation' system (base-area of knowledge)
+    -There are base 'vocations', which are basicaly base-aok that other aok branch out of,
+     which determine how exactly you deal with gathering 'arguments' from the environment.
+
+        -Crafter/Extractor: you manipulate the physical world by looting and crafting items. You get more arguments from AoK under this qualifier
+            -C/E arguments will often be used in crafting items rather than retaining knowledge. They spend more arguments on ephemeral/situational abilities which are usually favorable over bodymodding
+        -Mage: you manipulate the physical world by extracting magic potential from your own body and items to perform spells and throw projectiles.
+            -Mage arguments will often be used many times in combinating different spells. Arguments looted by mages 'accumulate' more, but will be lost when used to craft or bodymod.
+        -Acrobat: you manipulate the physical world by extracting magic and physical potential from your body and items to perform 'techniques'
+            -Acrobat arguments will also often be used many times in combining different techniques. Arguments looted by acrobats accumulate more, but can be lost when used to craft or bodymod.
+        -Commander: you manipulate the physical world by commanding magic and physical potential from another's body and items to perform commands and routines of spells, techniques, projectile throwing or item crafting. These are all contained in a 'comandee-aok' system, where you command a unit to perform actions they are capable of performing.
+            -Commander arguments will mostly be used on other monsters/entities they command. The arguments they collect for their commandees aren't usable in any other aok or commandee. Arguments gathered and retained by commanders are usually intelligence-based routines (such as attack less health, attack-attacker, etc...) and i assume would be especially more expensive
+
+    9.1 'relative-limiting' system of acquiring knowledge:
+        -All other AoK will be linked to one of the base-aok's (example: mining is C/E, frost-magic is Mage, brawling is acrobat). they can also be 'a little bit related', with a smaller bonus (example: stealth can be commander, but slightly accrobat as well.
+        -Aok-wisdom determines chance of dropping arguments, aok-affinity determines chance of increasing wisdom.
+        -Chosing an affinity (such as commander), will drop other affinities (such as mage/acrobat), causing you to need to farm 'longer' for those concepts.
+        -affinity-dampeners (placeholder name) will be either from the 'root' (all C/E actions) or specific (specifically crafting helmets).
+        -they could be neutralized by performing specific quests, which are supposed to be very hard and only possible after significant character development
+
+    9.2 'bodymod' system of attributes
+        -Any wisdom can be turned into upgrades for your own body. Though it will be relatively expensive in gold, you can turn your arguments into extra health, armor, elemental resistance, persistent effects, conditional effects, etc...
